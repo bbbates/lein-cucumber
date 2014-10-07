@@ -33,7 +33,7 @@
       (eval-in-project
        (-> project
            (update-in [:dependencies] conj
-                      ['lein-cucumber "1.0.3"]
+                      ['icm-consulting/lein-cucumber "1.0.3"]
                       ['info.cukes/cucumber-clojure "1.1.6"])
            (update-in [:source-paths] (partial apply conj) glue-paths))
        `(do
